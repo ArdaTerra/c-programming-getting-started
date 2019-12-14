@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main(void) 
+{
+    int X, Y, Z;
+    X=(25-23);
+    Y=(60*24*X);
+    Z=(60*Y);
+    printf("Dear Procrastinator,\nYou still have to wait for %d days (%d minutes or %d seconds) before you can procrastinate!", (25-23), (60*24*X), (60*Y));
+    return 0;
+}
