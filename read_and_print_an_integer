@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int i, num, times;
+    num = 8;
+    times = 0;
+    scanf("%d%d", &num, &times);
+    for(i=0; i<11; i++)
+    {
+        printf("%dx%d = %d\n", times, num, times*num);
+        times = times + 1;
+    }
+    return 0;
+}
+
+/*second way to code*/
+
+#include <stdio.h>
+
+int main() 
+{
+    int i, num;
+
+    scanf("%d", &num);
+
+    for (i = 0; i <= 10; i++){
+        printf("%dx%d = %d\n", i, num, i*num);
+    }
+
+    return(0);
+}
