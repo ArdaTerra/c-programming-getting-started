@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(void)
+{
+    int i, numberOfRobots, height, weight, enginePower, resistance, sum;
+    sum = 0;
+    scanf("%d\n", &numberOfRobots);
+    for(i=0; i<numberOfRobots; i++)
+    {
+    scanf("%d%d%d%d\n", &height, &weight, &enginePower, &resistance);
+    sum = sum + (enginePower+resistance) * (weight-height);
+    }
+    printf("%d\n",sum);
+    return (0);
+}
