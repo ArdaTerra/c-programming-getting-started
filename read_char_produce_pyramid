@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(void) 
+{
+    char letter;
+    letter = 'o';
+    
+    scanf("%c\n", &letter);
+    
+    printf("++++o++++\n", &letter);
+    printf("+++ooo+++\n", &letter);
+    printf("++ooooo++\n", &letter);
+    printf("+ooooooo+\n", &letter);
+    printf("ooooooooo\n", &letter);
+    
+    return 0;
+}
