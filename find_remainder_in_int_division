@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main(void) 
+{
+    int matches = 0;
+    int rest = 0;
+    scanf("%d %d", &matches, &rest);
+    printf("%d\n", matches/rest);
+    printf("%d\n", matches%rest);
+    return 0;
+}
