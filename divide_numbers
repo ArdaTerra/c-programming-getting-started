@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main(void) 
+{
+    double C = 30.5; 
+    double F = 0;
+    scanf("%lf\n", &C);
+    printf("%.1lf\n", F = C*9.0/5.0+32.0);
+    return 0;
+}
+
+/*the second way*/
+
+#include <stdio.h>
+
+int main(void) 
+{
+
+    double celsius;
+    double fahrenheit;
+
+    scanf("%lf", &celsius);
+
+    fahrenheit = celsius * 9.0/5.0 + 32;
+
+    printf("%.1lf", fahrenheit);
+
+    return 0;
+}
