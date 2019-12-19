@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main()
+{
+    double money, price;
+    int book; 
+    scanf("%lf %lf", &money, &price);
+    book = (int) money/price;
+    printf("%d\n", book);
+    return 0;
+}
