@@ -8,3 +8,23 @@ int main()
     printf("%d\n", totalCost*45);
     return 0;
 }
+
+/* the second way*/
+
+#include <stdio.h>
+int main (void)
+{ 
+    double numberOfCement; 
+    double bags;
+    int Ibags, cost;
+    scanf("%lf", &numberOfCement);
+    bags = numberOfCement/120;
+    Ibags = (int) bags;
+    for (int i = 0; Ibags < bags; i++) 
+    { 
+        Ibags = Ibags +1; 
+    } 
+    cost = Ibags*45; 
+    printf("%d", cost);
+    return 0;
+}
