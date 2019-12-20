@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main()
+{
+    double cement;
+    int totalCost; 
+    scanf("%lf", &cement);
+    totalCost = (int) cement/120+1;
+    printf("%d\n", totalCost*45);
+    return 0;
+}
