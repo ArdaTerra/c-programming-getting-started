@@ -30,17 +30,17 @@ int main(void)
 	
 	  if(noCharge)
 	  {
-		  printf("0");
+	  	printf("0");
 	  } 
 	  else 
 	  {
-		  if(discount)
+		if(discount)
 		{
-			   printf("5");
+			printf("5");
 		} 
 		else 
 		{
-		  if(extraLuggage)
+			if(extraLuggage)
 		{
 				printf("40");
 		  } 
