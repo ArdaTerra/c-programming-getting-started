@@ -1,5 +1,13 @@
-#include <stdio.h>
+read an integer and print the multiplication table
 
+In this activity, you want to improve your existing multiplication program (that prints the 8 times table). 
+Your program should read an integer from the user (not you) and print the multiplication table 
+for the number that they enter.
+input: 8
+
+
+
+#include <stdio.h>
 int main(void)
 {
     int i, num, times;
