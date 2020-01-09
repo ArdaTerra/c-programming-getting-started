@@ -1,3 +1,16 @@
+divide decimals
+
+Please write a C-program that starts by reading the amount of money you have (which may be a double), 
+then reads the price per book (which again may be a double). The program should then display an integer, 
+namely the largest number of books that you can purchase with the given amount of money.
+
+Examples
+Input
+48.0
+3.50
+Output
+13
+
 #include <stdio.h>
 int main()
 {
