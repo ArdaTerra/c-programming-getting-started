@@ -15,6 +15,13 @@ Output:
 *****
 *****
 
+Input:
+3
+Output:
+***
+***
+***
+
 #include <stdio.h>
 int main(void)
 {
