@@ -42,8 +42,9 @@ int main(void)
     int safe = 1;
     int stop = 0;
     scanf("%d %d", &min, &max);
-
-    while (!stop && safe){
+    
+    while (!stop && safe)
+    {
         scanf("%d", &t);
         stop = (t == -999);
         safe = (min <= t && t <= max);
@@ -60,6 +61,5 @@ int main(void)
             }
         }
     }
-
     return 0;
 }
