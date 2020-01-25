@@ -34,3 +34,32 @@ Output:
 Nothing to report
 Nothing to report
 Nothing to report
+
+#include <stdio.h>
+int main(void)
+{
+    int min, max, t;
+    int safe = 1;
+    int stop = 0;
+    scanf("%d %d", &min, &max);
+
+    while (!stop && safe){
+        scanf("%d", &t);
+        stop = (t == -999);
+        safe = (min <= t && t <= max);
+
+        if(!stop)
+        {
+            if (safe)
+            {
+                printf("Nothing to report\n");
+            } 
+            else 
+            {
+                printf("Alert!\n");
+            }
+        }
+    }
+
+    return 0;
+}
