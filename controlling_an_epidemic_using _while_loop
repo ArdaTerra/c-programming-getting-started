@@ -34,37 +34,14 @@ Output:
 int main(void)
 {
     int population = 0;
-    int day = 0;
+    int day = 1;
     scanf("%d", &population);
     int infected = 1; 
-    int infectedPopulation = infected*2;
-    while(infectedPopulation < population)
+    while(infected < population)
     {
-        day = day - infectedPopulation; 
-        printf("%d", day);
+        day++; 
+        infected *= 3;
     }
-    return 0;
-}
-
-/*second solution*/
-
-#include <stdio.h>
-
-int main()
-{
-    int day = 1;
-    int contaminated = 1;
-    int population;
-
-    scanf("%d", &population);
-
-    while (contaminated < population)
-    {
-        day++;
-        contaminated *= 3;
-    }
-
     printf("%d", day);
-
     return 0;
 }
