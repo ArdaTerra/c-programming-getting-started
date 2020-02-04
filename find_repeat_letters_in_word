@@ -1,0 +1,98 @@
+You are conducting linguistic research! 
+This time, you'd like to write a program to find out how many letters occur 
+multiple times in a given word. Your program should read a word from the input
+and then sort the letters of the word alphabetically (by their ASCII codes). 
+Next, your program should iterate through the letters of the word and compare
+each letter with the one following it. If these equal each other, 
+you increase a counter by 1, making sure to then skip ahead far enough 
+so that letters that occur more than twice are not counted again. 
+You may assume that the word you read from the input has no more 
+than 50 letters, and that the word is all lowercase.
+
+Examples
+Input:
+apple
+Output:
+1
+ 
+Input:
+keeper
+Output:
+1
+
+#include <stdio.h>
+int main(void)
+{
+	char word[51];
+	int l=0;
+	int i, j;
+	char swap;
+	int times=0;
+	scanf("%s", word);
+	
+	while (word[l]!='\0')
+	l++;
+	
+	for(j=0; j<l-1; j++)
+	{
+	    for(i=0; i<l-1; i++)
+	    {
+	        if(word[i] > word[i+1])
+	        {
+	            swap = word[i];
+	            word[i] = word[i+1];
+	            word[i+1] = swap;
+	        }
+	    }
+	}
+	
+	i=0;
+	
+	while (i<l-1) 
+	{
+        if (word[i]==word[i+1]) 
+        {
+            times++;
+            j=i+2;
+        }   
+    if (j<l && word[i]==word[j])
+    {
+        j++;
+        i = j;
+    }
+        else 
+        {
+            i++;
+        }
+    }
+	printf("%d", times);
+	return 0;
+}
+
+/*75%score solution*/
+#include <stdio.h>
+int main(void)
+{
+	char word[51];
+	int l = 0;
+	int i, j;
+	int swap;
+	int times;
+	scanf("%s", word);
+	
+	for(j=0; j<l-1; j++)
+	{
+	    for(i=0; i<l-1; i++)
+	    {
+	        if(word[i] > word[i+1])
+	        {
+	            swap = word[i];
+	            word[i] = word[i+1];
+	            word[i+1] = swap;
+	        }
+	    }
+	}
+	times = l+1;
+	printf("%d", times);
+	return 0;
+}
